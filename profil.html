@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInLeft">Ainul Lutfi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="text-white text-decoration-none hover-underline">Home</a></li>
+          <li><a href="profil.html" class="text-white text-decoration-none hover-underline">Profil</a></li>
+          <li><a href="gallery.html" class="text-white text-decoration-none hover-underline">Gallery</a></li>
+          <li><a href="formulir.html" class="text-white text-decoration-none hover-underline">Pendaftaran</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Profil Mahasiswa Section -->
+  <section class="container my-5 py-5" style="padding-top: 60px;">
+    <h2 class="text-center text-success mb-4 animate__animated animate__fadeInDown">Profil Mahasiswa Program Studi Pendidikan Informatika</h2>
+    <div class="row justify-content-center animate__animated animate__fadeInUp">
+      <div class="col-md-6">
+        <div class="card shadow-lg border-0">
+          <div class="card-body text-center p-4">
+            <div class="position-relative">
+              <img src="asset/foto.jpg" alt="Foto Mahasiswa" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+              <div class="position-absolute top-0 start-50 translate-middle">
+                <span class="badge bg-success">Aktif</span>
+              </div>
+            </div>
+            <h3 class="card-title text-success">Ainul Lutfi</h3>
+            <p class="card-text text-muted">NPM: 230305021</p>
+            <p class="card-text text-muted">Semester: 4</p>
+            <p class="card-text text-muted">Alamat: Jln. Menunggal II Timuk Jero, Dasan Lekong, Sukamulia-LOTIM</p>
+            <div class="mt-4">
+              <!-- Tombol untuk membuka modal -->
+              <button type="button" class="btn btn-success btn-sm me-2" data-bs-toggle="modal" data-bs-target="#profilModal">
+                Lihat Profil Lengkap
+              </button>
+              <a href="#" class="btn btn-outline-success btn-sm">Hubungi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Profil Lengkap -->
+  <div class="modal fade" id="profilModal" tabindex="-1" aria-labelledby="profilModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="profilModalLabel">Profil Lengkap Ainul Lutfi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="asset/foto.jpg" alt="Foto Mahasiswa" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+            <h3 class="text-success">Ainul Lutfi</h3>
+            <p class="text-muted">NPM: 230305021</p>
+            <p class="text-muted">Semester: 4</p>
+            <p class="text-muted">Alamat: Jln. Menunggal II Timuk Jero, Dasan Lekong, Sukamulia-LOTIM</p>
+            <hr>
+            <h5 class="text-success">Informasi Tambahan</h5>
+            <p class="text-muted">Program Studi: Pendidikan Informatika</p>
+            <p class="text-muted">Fakultas: Matematika dan Ilmu Pengetahuan Alam</p>
+            <p class="text-muted">Email: ainullutfi.230305021@student.hamzanwadi.ac.id </p>
+            <p class="text-muted">Nomor HP: +62 812 3456 7890</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-success">Hubungi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jadwal Perkuliahan Section -->
+  <section class="container my-5 py-5">
+    <h2 class="text-center text-success mb-4 animate__animated animate__fadeInDown">Jadwal Perkuliahan Periode 2024-2025 Genap</h2>
+    <div class="table-responsive animate__animated animate__fadeInUp">
+      <table class="table table-bordered table-striped">
+        <thead class="table-success">
+          <tr>
+            <th>NO</th>
+            <th>HARI</th>
+            <th>WAKTU</th>
+            <th>KODE</th>
+            <th>MATAKULIAH</th>
+            <th>RUANGAN</th>
+            <th>KELAS</th>
+            <th>DOSEN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Senin</td>
+            <td>14:00 - 15:40</td>
+            <td>PIN8423</td>
+            <td>Jaringan Dasar</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>JAMALLUDDIN</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Selasa</td>
+            <td>08:55 - 10:35</td>
+            <td>PIN8422</td>
+            <td>Pemrograman Web</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>HERI KUSWANTO</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Selasa</td>
+            <td>10:35 - 12:35</td>
+            <td>FMA6501</td>
+            <td>Aplikasi Komputer</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>MUHAMMOD ZAMRONI USKA</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Rabu</td>
+            <td>10:35 - 12:35</td>
+            <td>PIN8424</td>
+            <td>Sistem Informasi</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>BAIQ DESI DWI ARIANTI</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Rabu</td>
+            <td>14:00 - 15:40</td>
+            <td>PIN8425</td>
+            <td>Pengembangan Aplikasi Mobile</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>JAMALLUDDIN</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Jumat</td>
+            <td>08:55 - 10:35</td>
+            <td>PIN8426</td>
+            <td>Multimedia Lanjut</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>YOSI NUR KHOLISHO</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Jumat</td>
+            <td>14:00 - 15:40</td>
+            <td>PIN8427</td>
+            <td>Analisis dan Perancangan Sistem</td>
+            <td>Labkom 1</td>
+            <td>4 A</td>
+            <td>JAMALLUDDIN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
